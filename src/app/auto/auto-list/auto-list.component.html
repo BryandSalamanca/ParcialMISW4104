@@ -1,0 +1,26 @@
+<div class="card-container">
+    <table class="table">
+        <thead>
+            <tr class="title-table">
+                <th scope="col">#</th>
+                <th scope="col">Marca</th>
+                <th scope="col">Linea</th>
+                <th scope="col">Modelo</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let auto of Autos; index as i">
+                <th scope="row">{{ i + 1 }}</th>
+                <td>{{ auto.marca }}</td>
+                <td>{{ auto.linea}}</td>
+                <td>{{ auto.modelo}}</td>
+            </tr>
+        </tbody>
+    </table>
+    <div class='total'>
+        Total Renault : {{totalRenault}}
+        <br>
+        Total Chevrolett : {{totalChevrolett}}
+        <br>
+        Total Nissan : {{totalNissan}}</div>
+</div>
